@@ -1,0 +1,24 @@
+
+<div class="container">
+<h2 style="color: #999;">Sistemi prozora i ulaznih vrata</h2>
+<h1>88 mm sistemi</h1>
+<p class="lead">{{ getGroupData[0].opis }}</p>
+<div class="row">
+
+  <div class="col-xs-6 col-md-4" *ngFor = "let prod of getProdData">
+
+    <img style="height: 300px; width: 100%; display: block;" [src]="prod.slike" alt="Card image" id="s_p_img">
+    <h3>{{ prod.ime }}</h3>
+    <p class="lead">{{ prod.opis }}</p>
+
+    <div class="card border-primary mb-3" style="max-width: 20rem;" wfd-id="69">
+        <div class="card-header" wfd-id="71">Glavne karakteristike</div>
+        <div class="card-body" wfd-id="70">
+          <h4 class="card-title">{{ prod.ime }}</h4>
+          {{ prod.karakteristike }}
+        </div>
+      </div>
+  </div>
+
+  </div>
+</div>
