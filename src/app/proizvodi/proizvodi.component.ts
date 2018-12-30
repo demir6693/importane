@@ -63,6 +63,86 @@ export class ProizvodiComponent implements OnInit {
       });
     });
     
+    $('#m9650').hover(function()
+      {
+        $('#apa_img').attr('src', 'assets/alu-profili/m9650.jpg');
+      },
+      function()
+      {
+        $('#apa_img').attr('src', 'assets/sistemi_zastora.jpg')
+      });
+
+      $('#m9660').hover(function()
+      {
+        $('#apa_img').attr('src', 'assets/alu-profili/m9660.jpg');
+      },
+      function()
+      {
+        $('#apa_img').attr('src', 'assets/sistemi_zastora.jpg')
+      });
+
+      $('#m11000').hover(function()
+      {
+        $('#apa_img').attr('src', 'assets/alu-profili/m11000.jpg');
+      },
+      function()
+      {
+        $('#apa_img').attr('src', 'assets/sistemi_zastora.jpg')
+      });
+
+      $('#s350').hover(function()
+      {
+        $('#klizni-sis-al-img').attr('src', 'assets/klizni_sistemi/s350.jpg');
+      },
+      function()
+      {
+        $('#klizni-sis-al-img').attr('src', 'assets/klizni_sistemi.jpg')
+      });
+
+      $('#s440').hover(function()
+      {
+        $('#klizni-sis-al-img').attr('src', 'assets/klizni_sistemi/s440.jpg');
+      },
+      function()
+      {
+        $('#klizni-sis-al-img').attr('src', 'assets/klizni_sistemi.jpg')
+      });
+
+      $('#s560').hover(function()
+      {
+        $('#klizni-sis-al-img').attr('src', 'assets/klizni_sistemi/s560.jpg');
+      },
+      function()
+      {
+        $('#klizni-sis-al-img').attr('src', 'assets/klizni_sistemi.jpg')
+      });
+
+      $('#s700').hover(function()
+      {
+        $('#klizni-sis-al-img').attr('src', 'assets/klizni_sistemi/s700.png');
+      },
+      function()
+      {
+        $('#klizni-sis-al-img').attr('src', 'assets/klizni_sistemi.jpg')
+      });
+
+      $('#struct').hover(function()
+      {
+        $('#fasade').attr('src', 'assets/fasade-strukturalne/strukturalne-m3.png');
+      },
+      function()
+      {
+        $('#fasade').attr('src', 'assets/fasade.jpg')
+      });
+
+      $('#polu-struct').hover(function()
+      {
+        $('#fasade').attr('src', 'assets/fasade-nestrukturalne/m3-polu-struct.png');
+      },
+      function()
+      {
+        $('#fasade').attr('src', 'assets/fasade.jpg')
+      });
   }
 
 }
