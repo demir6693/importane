@@ -1,0 +1,48 @@
+<div class="container">
+
+<h1>SERTIFIKATI</h1>
+<hr>    
+    <div class="row border" *ngFor = "let prod of getProdData">
+      
+      <div class="col">
+
+        <img style="height: 500px; width: 80%; display: block;" [src] = "prod.slika">
+
+      </div>
+      
+      <div class="col" >
+
+        <h1>{{ prod.ime }}</h1>
+        <p> 
+          
+          <b>{{ prod.naslov }}</b>
+          
+          {{ prod.opis }}
+        </p>
+
+      </div>
+      
+      <div class="w-100"></div>
+
+      <div class="col">
+
+          <h1>{{ prod.ime }}</h1>
+          
+          <p> 
+            
+            <b>{{ prod.naslov }}</b>
+            
+            {{ prod.opis }}
+          </p>
+  
+        </div>
+        
+        <div class="col" >
+
+            <img style="height: 400px; width: 80%; display: block;" [src] = "prod.slika">
+          
+        </div>
+
+    </div>
+
+</div>

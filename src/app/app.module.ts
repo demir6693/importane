@@ -11,11 +11,12 @@ import { ProizvodiDetailsComponent } from './proizvodi-details/proizvodi-details
 import { OnamaComponent } from './onama/onama.component';
 import { KontaktComponent } from './kontakt/kontakt.component';
 import { ProjektiComponent } from './projekti/projekti.component';
+import { SertifikatiComponent } from './sertifikati/sertifikati.component';
 
 
 const appRoutes: Routes = [
 
-  { path: 'home', component: HomeComponent },
+  { path: '', component: HomeComponent },
 
   { path: 'proizvodi', component: ProizvodiComponent },
 
@@ -27,7 +28,9 @@ const appRoutes: Routes = [
 
   { path: 'projekti', component: ProjektiComponent },
 
-  { path:'', redirectTo: '/home', pathMatch: 'full'}
+  { path: 'sertifikati', component: SertifikatiComponent },
+
+  { path:'', redirectTo: '', pathMatch: 'full'}
 ];
 
 @NgModule({
@@ -39,7 +42,8 @@ const appRoutes: Routes = [
     ProizvodiDetailsComponent,
     OnamaComponent,
     KontaktComponent,
-    ProjektiComponent
+    ProjektiComponent,
+    SertifikatiComponent
   ],
   imports: [
     BrowserModule,
